@@ -1,0 +1,8 @@
+matches:
+  # General replies
+  - trigger: ";hit"
+    replace: "Hi there!"
+  - trigger: ";lmk"
+    replace: "Let me know"
+  - trigger: ";questions"
+    replace: "Let me know if you have any questions!"

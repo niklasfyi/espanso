@@ -1,0 +1,33 @@
+matches:
+
+  # Emojis
+  - trigger: ";cross.e"
+    replace: "❌"
+  - trigger: ";fire.e"
+    replace: "🔥"
+  - trigger: ";green.e"
+    replace: "🟢"
+  - trigger: ";idea.e"
+    replace: "💡"
+  - trigger: ";live.e"
+    replace: "🔴"
+  - trigger: ";orange.e"
+    replace: "🟠"
+  - trigger: ";ques.e"
+    replace: "❓"
+  - trigger: ";skull.e"
+    replace: "💀"
+  - trigger: ";check.e"
+    replace: "✅"
+  - trigger: ";sweat.e"
+    replace: "😅"
+  - trigger: ";joy.e"
+    replace: "😂"
+
+  # Flags
+  - trigger: ";flag.de"
+    replace: "🇩🇪"
+  - trigger: ";flag.us"
+    replace: "🇺🇸"
+  - trigger: ";flag.no"
+    replace: "🇳🇴"

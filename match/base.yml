@@ -8,10 +8,8 @@
 # Matches are substitution rules: when you type the "trigger" string
 # it gets replaced by the "replace" string.
 matches:
-  # Simple text replacement
-  - trigger: ":espanso"
-    replace: "Hi there!"
-  - trigger: ":ip4"
+
+  - trigger: ";ip4"
     replace: "{{output}}"
     vars:
       - name: output
@@ -19,7 +17,7 @@ matches:
         params:
           cmd: "echo $(curl https://api.ipify.org)"
 
-  - trigger: ":ip6"
+  - trigger: ";ip6"
     replace: "{{output}}"
     vars:
       - name: output
@@ -27,17 +25,10 @@ matches:
         params:
           cmd: "echo $(curl https://api64.ipify.org)"
 
-  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
-
-  # But matches can also be dynamic:
-
-  # Print the current date
-  - trigger: ":date"
+  - trigger: ";date"
     replace: "{{mydate}}"
     vars:
       - name: mydate
         type: date
         params:
           format: "%Y-%m-%d"
-
-  # And much more! For more information, visit the docs: https://espanso.org/docs/
